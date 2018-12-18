@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/id_text_status"
-        android:textSize="20dip"
-        android:text="注册状态" />
+        android:text="注册状态"
+        android:textSize="20dip"/>
 
     <Button
-        android:layout_marginTop="20dip"
-        android:id="@+id/id_btn_reg"
+        android:id="@+id/btn_reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="注册" />
+        android:layout_marginTop="20dip"
+        android:text="注册"/>
 
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="语音拨打"
+        />
+
+
+    <Button
+        android:id="@+id/btn_jie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="接电话"
+        />
+
+
+</LinearLayout>
